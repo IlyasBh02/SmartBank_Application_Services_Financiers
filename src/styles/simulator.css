@@ -1,0 +1,159 @@
+.simulator-heading {
+  margin-bottom: 28px;
+}
+
+.simulator-heading h2 {
+  margin-bottom: 8px;
+}
+
+.simulator-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 24px;
+}
+
+.simulator-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.simulator-controls {
+  background: var(--card-bg);
+  padding: 28px;
+}
+
+.simulator-controls h3,
+.simulator-results h3 {
+  margin-bottom: 22px;
+}
+
+.slider-group {
+  margin: 0 0 25px;
+}
+
+.slider-group label {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.slider-group strong {
+  color: var(--primary-color);
+  white-space: nowrap;
+}
+
+.slider-input {
+  width: 100%;
+  height: 7px;
+  accent-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.save-sim-btn {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.simulator-results {
+  background: linear-gradient(145deg, #17324d, #245d68);
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.simulator-results h3,
+.simulator-results p,
+.simulator-results span {
+  color: white;
+}
+
+.monthly-highlight {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.monthly-highlight span {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.monthly-highlight div {
+  margin-top: 6px;
+  color: #b9f6d4;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.result-details {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.result-details p {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.result-details strong {
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.result-details p:last-child strong {
+  color: #ffd27d;
+}
+
+.simulator-note {
+  margin-top: 28px;
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0.75;
+}
+
+.saved-simulations {
+  margin-top: 36px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+}
+
+.simulations-list {
+  margin-top: 15px;
+}
+
+.simulations-list > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.simulations-list > div > div {
+  padding: 18px;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-md) !important;
+  background: var(--card-bg) !important;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 850px) {
+  .simulator-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .monthly-highlight div {
+    font-size: 30px;
+  }
+}

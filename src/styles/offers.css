@@ -1,0 +1,71 @@
+.flash-banner {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: var(--text-white);
+  padding: 30px;
+  border-radius: var(--radius-md);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: var(--shadow-md);
+}
+
+.flash-content h2 {
+  color: var(--warning-color);
+  font-size: 24px;
+}
+
+.flash-timer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.timer-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.timer-num {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--warning-color);
+}
+
+.timer-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.offer-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offer-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.offer-badge {
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
